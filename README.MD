@@ -10,6 +10,36 @@ Before using either of the scripts, ensure that you have the following:
 - Go installed on your system (for the Go script)
 - SSH profiles set up with their respective private key files
 
+## Golang Implementation
+
+### Golang Usage
+
+To activate a specific SSH profile using the Go script, use the following command:
+
+```bash
+go run ssh_profile_activator.go <profile_name>
+```
+
+Replace `<profile_name>` with the name of the profile you want to activate. Valid profile names include:
+
+- work
+- personal
+
+You can specify multiple profile names to activate multiple profiles at once:
+
+```bash
+go run ssh_profile_activator.go <profile1> <profile2> ...
+```
+
+### Golang Usage Example
+
+To activate the "work" SSH profile and disable all other profiles using the Go script, use the following command:
+
+```bash
+go run ssh_profile_activator.go work
+```
+
+
 ## Python Implementation
 
 ### Python Usage
@@ -39,35 +69,6 @@ To activate the "work" SSH profile and disable all other profiles using the Pyth
 
 ```bash
 python ssh_profile_activator.py -p work
-```
-
-## Golang Implementation
-
-### Golang Usage
-
-To activate a specific SSH profile using the Go script, use the following command:
-
-```bash
-go run ssh_profile_activator.go <profile_name>
-```
-
-Replace `<profile_name>` with the name of the profile you want to activate. Valid profile names include:
-
-- work
-- personal
-
-You can specify multiple profile names to activate multiple profiles at once:
-
-```bash
-go run ssh_profile_activator.go <profile1> <profile2> ...
-```
-
-### Golang Usage Example
-
-To activate the "work" SSH profile and disable all other profiles using the Go script, use the following command:
-
-```bash
-go run ssh_profile_activator.go work
 ```
 
 ## Important Notes
