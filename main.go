@@ -62,5 +62,5 @@ func main() {
 		fmt.Println("Error while restarting ssh-agent: " + err.Error())
 		os.Exit(1)
 	}
-	fmt.Printf("SSH profile %s activated successfully.", profiles)
+	fmt.Printf("SSH profiles %s activated successfully.", profiles)
 }
