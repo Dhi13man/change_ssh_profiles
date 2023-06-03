@@ -1,5 +1,18 @@
 # SSH Profile Activator
 
+[![License](https://img.shields.io/github/license/dhi13man/change_ssh_profiles)](https://github.com/Dhi13man/change_ssh_profiles/blob/main/LICENSE)
+[![Contributors](https://img.shields.io/github/contributors-anon/dhi13man/change_ssh_profiles?style=flat)](https://github.com/Dhi13man/change_ssh_profiles/graphs/contributors)
+[![GitHub forks](https://img.shields.io/github/forks/dhi13man/change_ssh_profiles?style=social)](https://github.com/Dhi13man/change_ssh_profiles/network/members)
+[![GitHub Repo stars](https://img.shields.io/github/stars/dhi13man/change_ssh_profiles?style=social)](https://github.com/Dhi13man/change_ssh_profiles/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/dhi13man/change_ssh_profiles)](https://github.com/Dhi13man/change_ssh_profiles/commits/main)
+[![Build, Format, Test | Golang](https://github.com/dhi13man/change_ssh_profiles/actions/workflows/go.yml/badge.svg)](https://github.com/Dhi13man/change_ssh_profiles/actions)
+[![Build, Format, Test | Python](https://github.com/dhi13man/change_ssh_profiles/actions/workflows/python-package.yml/badge.svg)](https://github.com/Dhi13man/change_ssh_profiles/actions)
+
+[![Language | Golang](http://ForTheBadge.com/images/badges/made-with-go.svg)](https://golang.org/)
+[![Language | Python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
+[!["Buy Me A Coffee"](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20an%20Ego%20boost&emoji=%F0%9F%98%B3&slug=dhi13man&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00****)](https://www.buymeacoffee.com/dhi13man)
+
 This repository contains two implementations of an SSH profile activator script: one in Python and another in Go. These scripts allow you to activate a specific SSH profile while disabling all other profiles, providing a convenient way to manage and switch between different SSH configurations based on your needs.
 
 ## Prerequisites
