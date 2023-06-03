@@ -52,7 +52,6 @@ To activate the "work" SSH profile and disable all other profiles using the Go s
 go run ssh_profile_activator.go work
 ```
 
-
 ## Python Implementation
 
 ### Python Usage
