@@ -1,4 +1,4 @@
-# SSH Profile Activator
+# SSH Profile Switcher
 
 [![License](https://img.shields.io/github/license/dhi13man/change_ssh_profiles)](https://github.com/Dhi13man/change_ssh_profiles/blob/main/LICENSE)
 [![Contributors](https://img.shields.io/github/contributors-anon/dhi13man/change_ssh_profiles?style=flat)](https://github.com/Dhi13man/change_ssh_profiles/graphs/contributors)
@@ -13,7 +13,7 @@
 
 [!["Buy Me A Coffee"](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20an%20Ego%20boost&emoji=%F0%9F%98%B3&slug=dhi13man&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00****)](https://www.buymeacoffee.com/dhi13man)
 
-This repository contains two implementations of an SSH profile activator script: one in Python and another in Go. These scripts allow you to activate a specific SSH profile while disabling all other profiles, providing a convenient way to manage and switch between different SSH configurations based on your needs.
+This repository contains two implementations of an SSH profile Switcher script: one in Python and another in Go. These scripts allow you to activate a specific SSH profile while disabling all other profiles, providing a convenient way to manage and switch between different SSH configurations based on your needs.
 
 ## Prerequisites
 
@@ -30,18 +30,20 @@ Before using either of the scripts, ensure that you have the following:
 To activate a specific SSH profile using the Go script, use the following command:
 
 ```bash
-go run ssh_profile_activator.go <profile_name>
+go run main.go <profile_name>
 ```
 
-Replace `<profile_name>` with the name of the profile you want to activate. Valid profile names include:
+Replace `<profile_name>` with the name of the profile you want to activate. By default, profile names include:
 
-- work
-- personal
+- work: Assumed to be a profile with the private key located in "{HOME_DIR}/.ssh/work_rsa"
+- personal: Assumed to be a profile with the private key located in "{HOME_DIR}/.ssh/id_rsa"
+
+You can add more profiles or change the paths to existing profiles by modifying the `profileMap` dictionary in the script.
 
 You can specify multiple profile names to activate multiple profiles at once:
 
 ```bash
-go run ssh_profile_activator.go <profile1> <profile2> ...
+go run main.go <profile1> <profile2> ...
 ```
 
 ### Golang Usage Example
@@ -49,7 +51,7 @@ go run ssh_profile_activator.go <profile1> <profile2> ...
 To activate the "work" SSH profile and disable all other profiles using the Go script, use the following command:
 
 ```bash
-go run ssh_profile_activator.go work
+go run main.go work
 ```
 
 ## Python Implementation
@@ -59,20 +61,17 @@ go run ssh_profile_activator.go work
 To activate a specific SSH profile using the Python script, use the following command:
 
 ```bash
-python ssh_profile_activator.py -p <profile_name>
+python __main__.py -p <profile_name>
 ```
 
-Replace `<profile_name>` with the name of the profile you want to activate. Valid profile names include:
-
-- work: Assumed to be a profil with the private key located in "{HOME_DIR}/.ssh/work_rsa"
-- personal: Assumed to be a profile with the private key located in "{HOME_DIR}/.ssh/id_rsa"
+Replace `<profile_name>` with the name of the profile you want to activate.
 
 You can add more profiles or change the paths to existing profiles by modifying the `PROFILE_MAP` dictionary in the script.
 
 You can specify multiple profile names to activate multiple profiles at once:
 
 ```bash
-python ssh_profile_activator.py -p <profile1> <profile2> ...
+python __main__.py -p <profile1> <profile2> ...
 ```
 
 ### Python Usage Example
@@ -80,7 +79,7 @@ python ssh_profile_activator.py -p <profile1> <profile2> ...
 To activate the "work" SSH profile and disable all other profiles using the Python script, use the following command:
 
 ```bash
-python ssh_profile_activator.py -p work
+python __main__.py -p work
 ```
 
 ## Important Notes
