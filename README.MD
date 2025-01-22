@@ -64,7 +64,10 @@ To activate a specific SSH profile using the Python script, use the following co
 python __main__.py -p <profile_name>
 ```
 
-Replace `<profile_name>` with the name of the profile you want to activate.
+Replace `<profile_name>` with the name of the profile you want to activate. By default, profile names include:
+
+- work: Assumed to be a profile with the private key located in "{HOME_DIR}/.ssh/work_rsa"
+- personal: Assumed to be a profile with the private key located in "{HOME_DIR}/.ssh/id_rsa"
 
 You can add more profiles or change the paths to existing profiles by modifying the `PROFILE_MAP` dictionary in the script.
 
