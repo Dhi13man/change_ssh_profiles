@@ -96,3 +96,11 @@ python __main__.py -p work
 - For the Golang script, ensure that Go is installed on your system and that the Go environment is properly set up.
 
 Feel free to modify and extend these scripts to suit your specific needs.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+See [LICENSE.md](LICENSE.md).
